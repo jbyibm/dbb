@@ -23,8 +23,8 @@ types:
   - type: "CICSLOAD"
     pattern: .*\.CICSLOAD$
     pds: 
-      name: "{{ hlq }}.LOAD"
-      backup: "{{ hlq }}.BACK.LOAD"
+      name: "{{ hlq }}.LOADLIB"
+      backup: "{{ hlq }}.BACK.LOADLIB"
       spec: "{{ common_pds_load_spec }}"
     is_load: true
     force_lock: True
@@ -35,8 +35,8 @@ types:
   - type: "MAPLOAD"
     pattern: .*\.MAPLOAD$
     pds: 
-      name: "{{ hlq }}.LOAD"
-      backup: "{{ hlq }}.BACK.LOAD"
+      name: "{{ hlq }}.LOADLIB"
+      backup: "{{ hlq }}.BACK.LOADLIB"
       spec: "{{ common_pds_load_spec }}"
     is_load: true
     force_lock: true
